@@ -1,0 +1,155 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali's Profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            padding: 30px;
+            margin: 20px;
+            box-sizing: border-box;
+            border: 1px solid #e0e0e0;
+        }
+
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-image-container {
+            width: 120px;
+            height: 120px;
+            border: 2px dashed #007bff;
+            padding: 5px;
+            box-sizing: content-box;
+            margin-bottom: 15px;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .title {
+            color: #007bff;
+            font-size: 2.2em;
+            font-weight: 700;
+            text-align: left;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .paragraph {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #333333;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .text-blue {
+            color: #007bff;
+        }
+
+        .highlight-green {
+            background-color: #d4edda;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #155724;
+        }
+
+        .highlight-orange {
+            background-color: #ffeeba;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #856404;
+        }
+
+        .highlight-red {
+            background-color: #f8d7da;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #721c24;
+        }
+
+        .highlight-light-blue {
+            background-color: #cce5ff;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #004085;
+        }
+        
+        .skills-section {
+            margin-top: 30px;
+            text-align: left;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .underline {
+            text-decoration: underline;
+        }
+
+        .strikethrough {
+            text-decoration: line-through;
+        }
+
+        .tools-section {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #333333;
+            text-align: left;
+        }
+
+ 
+        .small-note {
+            font-size: 0.9em; 
+            color: #6c757d; 
+            display: block;  
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="profile-header">
+            <div class="profile-image-container">
+                <img src="image2.jpeg" alt="Ali Kamal's profile picture" class="profile-image">
+            </div>
+            <h1 class="title">This Is Ali</h1>
+        </div>
+
+        <div class="paragraph">
+            <p>Hi! I'm <span class="text-blue">Ali Kamal</span>, a passionate <span class="highlight-green">graphic designer</span> who enjoys creating <span class="highlight-orange">visually stunning</span> artwork. I always <span class="highlight-orange">experiment with colors</span> and focus on <span class="underline">user emotions</span> in every design. I used to <span class="strikethrough">ignore feedback</span>, but now I <span class="highlight-red">value it</span> so much.</p>
+        </div>
+
+        <div class="tools-section">
+            <p>My tools include <span class="highlight-light-blue">Photoshop</span>, <span class="highlight-light-blue">Illustrator</span>, and Figma. The formula CO₂ shows carbon dioxide, and π = 3.14 is magical!</p>
+            <p class="small-note">Design is not just art, it's a way of solving problems.</p>
+        </div>
+    </div>
+
+</body>
+</html>
