@@ -1,0 +1,121 @@
+ /* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #3a7bd5, #3a2bd5);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Cards */
+.concept-card {
+    background-color: #1e1e2f;
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px;
+}
+
+.concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Card Header */
+.card-header {
+    background: linear-gradient(135deg, #4a90e2, #2a6cd5);
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+/* Code Styling */
+pre {
+    background-color: transparent;
+    padding: 15px;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #dcdcdc;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #3a7bd5;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #2f5cb8;
+}
+
+/* Modal Styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    max-width: 400px;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.show .modal-content-wrapper {
+    transform: translateY(0);
+}
+
+.modal-header-custom {
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.modal-body-custom {
+    padding: 20px;
+    font-size: 1rem;
+    color: #555;
+    min-height: 100px;
+}
+
+.modal-body-custom p {
+    margin-bottom: 10px;
+}
+
+.modal-body-custom input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-footer-custom {
+    padding: 15px 20px;
+    border-top: 1px solid #e9e9e9;
+    text-align: right;
+}

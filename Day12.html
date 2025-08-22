@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern JavaScript Operations</title>
+    <link rel="stylesheet" href="Day12.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Modern JavaScript Operations</h1>
+        <p class="description">Explore core JavaScript concepts through interactive operations without DOM manipulation</p>
+
+        <section class="grid-section">
+            <div class="card">
+                <h2><i class="icon"></i>Array Operations</h2>
+                <p>Perform various array manipulations including:</p>
+                <ul>
+                    <li>Adding/removing elements (push, pop, shift, unshift)</li>
+                    <li>Slicing and splicing arrays</li>
+                    <li>Transforming with map, filter, reduce</li>
+                    <li>Combining and copying arrays</li>
+                    <li>Searching and sorting elements</li>
+                </ul>
+                <button class="blue-btn" onclick="runOperation('Array Operations')">Run Array Operations</button>
+            </div>
+            <div class="card">
+                <h2><i class="icon"></i>String Operations</h2>
+                <p>Manipulate and analyze text strings including:</p>
+                <ul>
+                    <li>Changing case (upper/lower)</li>
+                    <li>Searching within strings</li>
+                    <li>Extracting substrings</li>
+                    <li>Splitting and joining</li>
+                    <li>Replacing text patterns</li>
+                    <li>String formatting</li>
+                </ul>
+                <button class="blue-btn" onclick="runOperation('String Operations')">Run String Operations</button>
+            </div>
+            <div class="card">
+                <h2><i class="icon"></i>Object Operations</h2>
+                <p>Work with JavaScript objects including:</p>
+                <ul>
+                    <li>Creating and modifying objects</li>
+                    <li>Accessing nested properties</li>
+                    <li>Object iteration methods</li>
+                    <li>Getting keys/values</li>
+                    <li>Object copying and merging</li>
+                    <li>JSON serialization</li>
+                </ul>
+                <button class="blue-btn" onclick="runOperation('Object Operations')">Run Object Operations</button>
+            </div>
+        </section>
+
+        <section class="grid-section">
+            <div class="card">
+                <h2><i class="icon"></i>Function Operations</h2>
+                <p>Explore JavaScript functions including:</p>
+                <ul>
+                    <li>Function declarations vs expressions</li>
+                    <li>Arrow functions</li>
+                    <li>Higher-order functions</li>
+                    <li>Closures and private variables</li>
+                    <li>Callback patterns</li>
+                    <li>Recursive functions</li>
+                </ul>
+                <button class="blue-btn" onclick="runOperation('Function Operations')">Run Function Operations</button>
+            </div>
+            <div class="card">
+                <h2><i class="icon"></i>Data Processing</h2>
+                <p>Process sample datasets including:</p>
+                <ul>
+                    <li>Product inventory analysis</li>
+                    <li>Employee records processing</li>
+                    <li>Data aggregation</li>
+                    <li>Statistical calculations</li>
+                    <li>Grouping and categorization</li>
+                    <li>Data transformation</li>
+                </ul>
+                <button class="blue-btn" onclick="runOperation('Data Processing')">Run Data Processing</button>
+            </div>
+            <div class="card">
+                <h2><i class="icon"></i>Search Operations</h2>
+                <p>Search through data including:</p>
+                <ul>
+                    <li>Text search in strings</li>
+                    <li>Finding array elements</li>
+                    <li>Object property search</li>
+                    <li>Case-insensitive search</li>
+                    <li>Partial match search</li>
+                    <li>Multi-criteria search</li>
+                </ul>
+                <button class="blue-btn" onclick="runOperation('Search Operations')">Run Search Operations</button>
+            </div>
+        </section>
+        
+        <section class="grid-section">
+            <div class="card">
+                <h2><i class="icon"></i>Sort Operations</h2>
+                <p>Sort data in various ways:</p>
+                <ul>
+                    <li>Alphabetical sorting</li>
+                    <li>Numerical sorting</li>
+                    <li>Custom sort functions</li>
+                    <li>Ascending/descending order</li>
+                    <li>Multi-property sorting</li>
+                    <li>Localized string sorting</li>
+                </ul>
+                <button class="blue-btn" onclick="runOperation('Sort Operations')">Run Sort Operations</button>
+            </div>
+            <div class="card">
+                <h2><i class="icon"></i>Filter Operations</h2>
+                <p>Filter datasets based on criteria:</p>
+                <ul>
+                    <li>Range filtering (numbers, dates)</li>
+                    <li>Category filtering</li>
+                    <li>Multiple condition filters</li>
+                    <li>Text content filters</li>
+                    <li>Custom filter functions</li>
+                    <li>Chaining filters</li>
+                </ul>
+                <button class="blue-btn" onclick="runOperation('Filter Operations')">Run Filter Operations</button>
+            </div>
+            <div class="card">
+                <h2><i class="icon"></i>Math Operations</h2>
+                <p>Perform mathematical calculations:</p>
+                <ul>
+                    <li>Basic arithmetic</li>
+                    <li>Advanced math functions</li>
+                    <li>Random number generation</li>
+                    <li>Rounding operations</li>
+                    <li>Exponents and roots</li>
+                    <li>Trigonometric functions</li>
+                </ul>
+                <button class="blue-btn" onclick="runOperation('Math Operations')">Run Math Operations</button>
+            </div>
+        </section>
+
+        <section class="grid-section">
+            <div class="card">
+                <h2><i class="icon"></i>Date Operations</h2>
+                <p>Work with dates and times:</p>
+                <ul>
+                    <li>Date creation and parsing</li>
+                    <li>Date component access</li>
+                    <li>Date arithmetic</li>
+                    <li>Date formatting</li>
+                    <li>Time differences</li>
+                    <li>Date comparisons</li>
+                </ul>
+                <button class="blue-btn" onclick="runOperation('Date Operations')">Run Date Operations</button>
+            </div>
+            <div class="card">
+                <h2><i class="icon"></i>Advanced Functions</h2>
+                <p>Explore advanced function concepts:</p>
+                <ul>
+                    <li>Recursive functions</li>
+                    <li>Function composition</li>
+                    <li>Memoization</li>
+                    <li>Currying</li>
+                    <li>Promises (simulated)</li>
+                    <li>Higher-order patterns</li>
+                </ul>
+                <button class="blue-btn" onclick="runOperation('Advanced Functions')">Run Advanced Functions</button>
+            </div>
+            <div class="card exit-card">
+                <h2><i class="icon"></i>Exit Application</h2>
+                <p>Close the application:</p>
+                <ul>
+                    <li>Confirm before exiting</li>
+                    <li>Display farewell message</li>
+                    <li>Clean up resources</li>
+                </ul>
+                <button class="purple-btn" onclick="runOperation('Exit Application')">Exit Application</button>
+            </div>
+        </section>
+
+        <div class="output-section">
+            <h3>> Operation Output</h3>
+            <p id="output-text" class="output-text">This application now uses alert() and prompt() for all interactions instead of DOM manipulation.</p>
+        </div>
+    </div>
+    <script src="Day12.js"></script>
+</body>
+</html>

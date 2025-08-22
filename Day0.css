@@ -1,0 +1,59 @@
+ p{
+    color:aqua;
+   font-size: 60px;
+}
+h1{
+    color: red;
+    
+}
+.test1{
+    color:black;
+}
+#test2{
+    color: blue;
+}
+div p{
+    color: brown;
+}
+input[type="text"]{
+ color:#30ff00;
+}
+input[type="submit"]{
+    background-color: aqua;
+}
+input[type="password"]{
+    color:green;
+}
+input[type="email"]{
+    background-color: darkmagenta
+}
+.x{
+    height:100px;
+    width:100px;
+    background-color: dimgrey;
+    
+    border-width:10px;
+    border-color:red;
+    border-style: double;   
+        
+        /*
+         * or
+         * boorder: 10px red solid;
+         * 
+         * */
+}
+div{
+    color:dodgerblue;
+    
+}
+h1{
+    color:#8a15ac;
+    font-family:cursif;
+    font-size:30px;
+    font-weight: bold;
+}
+.y{
+    color:#14805b;
+    font-size: 20px;
+    line-height: 100px;
+}

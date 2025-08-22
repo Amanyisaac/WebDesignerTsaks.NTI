@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tasks & Recipes App</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f7f8fb; color:#111; padding:24px; }
+    .container { max-width:900px; margin:0 auto; background:white; border-radius:10px; padding:20px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+    h1 { margin:0 0 8px; }
+    .grid { display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin-top:12px; }
+    .card { padding:14px; border-radius:8px; background:#fcfdff; border:1px solid #eef2f7; }
+    button { display:block; width:100%; padding:10px; border-radius:8px; border:1px solid #cbd5e1; background:#fff; cursor:pointer; font-weight:600; }
+    button:hover { transform:translateY(-1px); box-shadow:0 4px 10px rgba(2,6,23,0.04); }
+    .wide { grid-column: 1 / -1; }
+    small { color:#666; display:block; margin-top:6px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tasks & Recipes App</h1>
+    <p>Use the buttons below to interact with the tasks and recipes.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Tasks</h3>
+        <button onclick="view()">View All Tasks</button>
+        <small>Show all tasks.</small>
+      </div>
+
+      <div class="card">
+        <h3>Tasks</h3>
+        <button onclick="add()">Add Task</button>
+        <small>Add a new task.</small>
+      </div>
+
+      <div class="card">
+        <h3>Tasks</h3>
+        <button onclick="complete()">Complete Task</button>
+        <small>Mark task as completed.</small>
+      </div>
+
+      <div class="card">
+        <h3>Tasks</h3>
+        <button onclick="delet()">Delete Task</button>
+        <small>Delete a task.</small>
+      </div>
+
+      <div class="card">
+        <h3>Tasks</h3>
+        <button onclick="statict()">Show Statistics</button>
+        <small>Show tasks statistics.</small>
+      </div>
+
+      <div class="card wide">
+        <h3>Recipes</h3>
+        <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:8px;">
+          <button onclick="cook()">Show All Recipes</button>
+          <button onclick="addrecipe()">Add Recipe</button>
+          <button onclick="sear()">Search Recipe</button>
+          <button onclick="randomRecipe()">Random Recipe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

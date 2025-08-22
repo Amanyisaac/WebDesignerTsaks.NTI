@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Hub</title>
+  <link rel="stylesheet" href="Day11.css">
+</head>
+<body>
+
+  <!-- Notification Bar -->
+  <div id="message" class="notification-bar"></div>
+
+  <div class="container">
+    <h1>Productivity Hub</h1>
+    <p>Manage your tasks and recipes in one place</p>
+    <hr>
+
+    <!-- Task Management -->
+    <section class="task-management">
+      <h2>Task Management</h2>
+      <div class="button-group">
+        <button onclick="viewNotes()">View All Tasks</button>
+        <button onclick="addNote()">Add New Task</button>
+        <button onclick="deleteNote()">Delete Task</button>
+        <button onclick="searchNotes()">Search Notes</button>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Recipe Management -->
+    <section class="recipe-management">
+      <h2>Recipe Management</h2>
+      <div class="button-group">
+        <button onclick="viewRecipes()">View All Recipes</button>
+        <button onclick="addRecipe()">Add New Recipe</button>
+        <button onclick="searchRecipes()">Search Recipes</button>
+        <button onclick="randomRecipe()">Random Recipe</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal for Tasks -->
+  <div id="modal-container-task" class="modal-container">
+    <div class="modal">
+      <pre id="task-output"></pre>
+      <p id="task-prompt"></p>
+      <input type="text" id="task-input">
+      <button id="ok-task" onclick="confirmTask()">OK</button>
+      <button id="cancel-task" onclick="cancelTask()">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Modal for Recipes -->
+  <div id="modal-container-recipe" class="modal-container">
+    <div class="modal">
+      <pre id="recipe-output"></pre>
+      <p id="recipe-prompt"></p>
+      <input type="text" id="recipe-input">
+      <button id="ok-recipe" onclick="confirmRecipe()">OK</button>
+      <button id="cancel-recipe" onclick="cancelRecipe()">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Link JS File -->
+  <script src="Day11.js"></script>
+</body>
+</html>

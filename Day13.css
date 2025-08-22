@@ -1,0 +1,220 @@
+ body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.main-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;  
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+ .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+ .card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 0;
+    transition: color 0.3s ease;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    transition: opacity 0.3s ease;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.effect-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.effect-btn:hover {
+    background-color: #45a049;
+}
+
+ .card.change-color-shadow {
+    background-color: #ffeb3b;
+    box-shadow: 0 8px 20px rgba(255, 235, 59, 0.4);
+}
+
+ .card.change-title-color h2 {
+    color: #f44336;
+}
+
+ .card.border-rotate {
+    animation: border-rotate 1s ease-in-out;
+}
+@keyframes border-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(5deg); }
+}
+
+ .card.image-effect img {
+    filter: blur(2px) grayscale(100%);
+}
+
+ .card.image-text-effect img {
+    transform: scale(1.1);
+}
+.card.image-text-effect p {
+    text-decoration: underline;
+}
+
+ 
+.card.fade-effect {
+    opacity: 0.5;
+}
+
+ .card.zoom-rotate img {
+    animation: zoom-rotate 1s ease-in-out forwards;
+}
+@keyframes zoom-rotate {
+    0% { transform: scale(1) rotate(0deg); }
+    100% { transform: scale(1.1) rotate(5deg); }
+}
+
+ .card.pulse-effect {
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4); }
+    70% { box-shadow: 0 0 0 20px rgba(76, 175, 80, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+}
+
+ .card.glow-elevate {
+    box-shadow: 0 0 20px #ffc107, 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+}
+
+ .card.change-background {
+    background-color: #2196f3;
+}
+
+ .card.shake-bounce {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+@keyframes shake {
+    10%, 90% { transform: translateX(-1px); }
+    20%, 80% { transform: translateX(2px); }
+    30%, 50%, 70% { transform: translateX(-4px); }
+    40%, 60% { transform: translateX(4px); }
+}
+
+ .card.flip-grayscale img {
+    transform: rotateY(180deg);
+    filter: grayscale(100%);
+}
+
+ .card.text-shadow h2,
+.card.text-shadow p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+ .card.float-border {
+    border-color: #9c27b0;
+    box-shadow: 0 0 10px #9c27b0;
+    animation: float 2s infinite ease-in-out;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+ .card.rotate-image img {
+    transform: rotate(10deg);
+}
+
+ .card.neon-border {
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+ .card.change-button-color .effect-btn {
+    background-color: #ff5722;
+}
+
+ .card.squeeze-effect {
+    transform: scale(0.95, 1.05);
+}
+
+ .card.blur-effect {
+    filter: blur(2px);
+}
+
+ .card.gradient-rotate {
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    animation: rotate-card 2s linear infinite;
+}
+@keyframes rotate-card {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+ 
+ 
